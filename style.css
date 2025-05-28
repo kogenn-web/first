@@ -44,3 +44,7 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
+#goal-desc {
+  margin: 1rem 0;      /* 上下留白 */
+  line-height: 1.6;    /* 提高可读性 */
+}
