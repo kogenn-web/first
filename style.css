@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
   background: white;
   border-radius: 12px;
@@ -32,9 +32,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.skills {
+.skills, .roadmap {
   list-style: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .lang-buttons {
