@@ -3,25 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>kogenn 的主页</title>
+  <title>Kogenn 的多语言主页</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>你好，我是 kogenn 👋</h1>
-    <img src="avatar.jpg" alt="头像" class="avatar" />
-    <p>我是一名正在成长的开发者，热爱网页设计与编程，希望成为一名全栈工程师。</p>
+  <div class="lang-buttons">
+    <button onclick="setLang('zh')">中文</button>
+    <button onclick="setLang('ja')">日本語</button>
+    <button onclick="setLang('en')">English</button>
+  </div>
 
-    <h2>🎯 我的技能</h2>
-    <ul class="skills">
-      <li>✅ HTML & CSS 基础</li>
-      <li>✅ JavaScript 初学中</li>
-      <li>✅ Git / GitHub 操作</li>
+  <div class="container">
+    <h1 id="title">你好，我是 kogenn 👋</h1>
+    <img src="avatar.jpg" alt="头像" class="avatar" />
+
+    <p id="intro">我是一名正在成长的开发者，热爱网页设计与编程，希望成为一名全栈工程师。</p>
+
+    <h2 id="skills-title">🎯 我的技能</h2>
+    <ul id="skills-list" class="skills">
+      <li>✅ HTML / CSS 基础</li>
+      <li>✅ JavaScript 初学</li>
+      <li>✅ GitHub 上传与部署</li>
     </ul>
 
-    <h2>📬 联系方式</h2>
+    <h2 id="contact-title">📬 联系方式</h2>
     <p>Email: kogennweb@example.com</p>
     <p><a href="https://github.com/kogenn-web" target="_blank">我的 GitHub</a></p>
   </div>
+
+  <script>
+    const langData = {
+      zh: {
+        title: "你好，我是 kogenn 👋",
+        intro: "我是一名正在成长的开发者，热爱网页设计与编程，希望成为一名全栈工程师。",
+        skillsTitle: "🎯 我的技能",
+        skillsList: [
+          "✅ HTML / CSS 基础",
+          "✅ JavaScript 初学",
+          "✅ GitHub 上传与部署"
+        ],
+        contactTitle: "📬 联系方式"
+      },
+      ja: {
+        title: "こんにちは、kogenn です 👋",
+        intro: "私はフルスタックエンジニアを目指している、成長中の開発者です。Web制作とプログラミングが大好きです。",
+        skillsTitle: "🎯 スキル",
+        skillsList: [
+          "✅ HTML / CSS の基礎",
+          "✅ JavaScript 初級",
+          "✅ GitHub による公開"
+        ],
+        contactTitle: "📬 連絡先"
+      },
+      en: {
+        title: "Hi, I'm kogenn 👋",
+        intro: "I'm a growing developer who loves web design and coding. My goal is to become a full-stack engineer.",
+        skillsTitle: "🎯 My Skills",
+        skillsList: [
+          "✅ Basic HTML / CSS",
+          "✅ Beginner in JavaScript",
+          "✅ GitHub deployment"
+        ],
+        contactTitle: "📬 Contact"
+      }
+    };
+
+    function setLang(lang) {
+      const data = langData[lang];
+      document.getElementById("title").innerText = data.title;
+      document.getElementById("intro").innerText = data.intro;
+      document.getElementById("skills-title").innerText = data.skillsTitle;
+
+      const skillsList = document.getElementById("skills-list");
+      skillsList.innerHTML = "";
+      data.skillsList.forEach(skill => {
+        const li = document.createElement("li");
+        li.textContent = skill;
+        skillsList.appendChild(li);
+      });
+
+      document.getElementById("contact-title").innerText = data.contactTitle;
+    }
+  </script>
 </body>
 </html>
