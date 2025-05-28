@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kogenn 的全栈学习主页</title>
+  <title>Kogenn 的全栈成长主页</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="lang-buttons">
@@ -13,107 +15,92 @@
     <button onclick="setLang('en')">English</button>
   </div>
 
-  <div class="container">
+  <main class="card">
     <h1 id="title">你好，我是 kogenn 👋</h1>
-    <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="头像" class="avatar" />
-
+    <img src="images.jpg" alt="头像" class="avatar" />
     <p id="intro">我是一名正在成长的开发者，热爱网页设计与编程，希望成为一名全栈工程师。</p>
 
-    <h2 id="skills-title">🎯 我的技能</h2>
-    <ul id="skills-list" class="skills">
-      <li>✅ HTML / CSS 基础</li>
-      <li>✅ JavaScript 初学</li>
-      <li>✅ GitHub 上传与部署</li>
-    </ul>
+    <section>
+      <h2 id="skills-title">✨ 我的技能</h2>
+      <ul id="skills-list" class="skills">
+        <li>✅ HTML / CSS 基础</li>
+        <li>✅ JavaScript 初学</li>
+        <li>✅ GitHub 上传与部署</li>
+      </ul>
+    </section>
 
-    <h2>🚀 我的目标：成为全栈工程师</h2>
-    <p>🎯 我的目标是成为能独立开发网站的全栈工程师，掌握前端 + 后端 + 数据库 + 部署技能。</p>
+    <section>
+      <h2>🚀 我的目标：成为全栈工程师</h2>
+      <p>我的目标是掌握前端 + 后端 + 数据库 + 部署，能够独立完成项目开发。</p>
 
-    <h3>📘 全栈学习路线：</h3>
-    <ul class="roadmap">
-      <li>第1阶段：HTML / CSS / JavaScript 入门 - <a href="https://developer.mozilla.org/">MDN</a>, <a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
-      <li>第2阶段：Git / GitHub / 网页部署 - <a href="https://docs.github.com/">GitHub Docs</a></li>
-      <li>第3阶段：React 前端框架 - <a href="https://reactjs.org/">React Docs</a></li>
-      <li>第4阶段：Node.js + Express 后端开发 - <a href="https://nodejs.org/">Node.js 官网</a></li>
-      <li>第5阶段：数据库（MongoDB / MySQL） - <a href="https://www.mongodb.com/">MongoDB 官网</a></li>
-      <li>第6阶段：全栈项目开发与部署上线 - Vercel / Netlify / Heroku</li>
-      <li>第7阶段：面试准备 + 项目展示 - 个人主页 / GitHub</li>
-    </ul>
+      <h3>📘 全栈学习路线：</h3>
+      <ul class="roadmap">
+        <li><strong>第1阶段：</strong>HTML / CSS / JS - <a href="https://developer.mozilla.org/">MDN</a>, <a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+        <li><strong>第2阶段：</strong>Git / GitHub - <a href="https://docs.github.com/">GitHub Docs</a></li>
+        <li><strong>第3阶段：</strong>React 前端框架 - <a href="https://reactjs.org/">React</a></li>
+        <li><strong>第4阶段：</strong>Node.js + Express 后端 - <a href="https://nodejs.org/">Node.js</a></li>
+        <li><strong>第5阶段：</strong>MongoDB / MySQL - <a href="https://www.mongodb.com/">MongoDB</a></li>
+        <li><strong>第6阶段：</strong>项目部署上线 - Vercel / Netlify</li>
+        <li><strong>第7阶段：</strong>面试准备 + 项目整理</li>
+      </ul>
+    </section>
 
-    <h3>🧪 推荐练习项目：</h3>
-    <ul>
-      <li>✅ Todo List（JS 练手）</li>
-      <li>✅ 个人博客（React + Markdown）</li>
-      <li>✅ 评论区（API + 数据库）</li>
-      <li>✅ 登录系统（全栈认证）</li>
-    </ul>
+    <section>
+      <h3>🔗 推荐练习平台</h3>
+      <ul class="links">
+        <li><a href="https://leetcode.com/">LeetCode</a></li>
+        <li><a href="https://www.codewars.com/">Codewars</a></li>
+        <li><a href="https://www.frontendmentor.io/">Frontend Mentor</a></li>
+        <li><a href="https://www.hackerrank.com/">HackerRank</a></li>
+      </ul>
+    </section>
 
-    <h3>🌐 编程练习网站：</h3>
-    <ul>
-      <li><a href="https://leetcode.com/">LeetCode</a></li>
-      <li><a href="https://www.codewars.com/">Codewars</a></li>
-      <li><a href="https://www.frontendmentor.io/">Frontend Mentor</a></li>
-      <li><a href="https://www.hackerrank.com/">HackerRank</a></li>
-    </ul>
+    <section>
+      <h2 id="contact-title">📬 联系方式</h2>
+      <p>Email: kogennweb@example.com</p>
+      <p><a href="https://github.com/kogenn-web" target="_blank">我的 GitHub</a></p>
+    </section>
+  </main>
 
-    <h2 id="contact-title">📬 联系方式</h2>
-    <p>Email: kogennweb@example.com</p>
-    <p><a href="https://github.com/kogenn-web" target="_blank">我的 GitHub</a></p>
-  </div>
+<script>
+const langData = {
+  zh: {
+    title: "你好，我是 kogenn 👋",
+    intro: "我是一名正在成长的开发者，热爱网页设计与编程，希望成为一名全栈工程师。",
+    skillsTitle: "✨ 我的技能",
+    skillsList: ["✅ HTML / CSS 基础", "✅ JavaScript 初学", "✅ GitHub 上传与部署"],
+    contactTitle: "📬 联系方式"
+  },
+  ja: {
+    title: "こんにちは、kogenn です 👋",
+    intro: "私は成長中の開発者で、Web開発とプログラミングが大好きです。フルスタックエンジニアを目指しています。",
+    skillsTitle: "✨ スキル",
+    skillsList: ["✅ HTML / CSS の基礎", "✅ JavaScript 初級", "✅ GitHub 公開"],
+    contactTitle: "📬 連絡先"
+  },
+  en: {
+    title: "Hi, I'm kogenn 👋",
+    intro: "I'm a growing developer who loves web design and programming. I aim to become a full-stack engineer.",
+    skillsTitle: "✨ My Skills",
+    skillsList: ["✅ Basic HTML / CSS", "✅ Beginner JavaScript", "✅ GitHub Deployment"],
+    contactTitle: "📬 Contact"
+  }
+};
 
-  <script>
-    const langData = {
-      zh: {
-        title: "你好，我是 kogenn 👋",
-        intro: "我是一名正在成长的开发者，热爱网页设计与编程，希望成为一名全栈工程师。",
-        skillsTitle: "🎯 我的技能",
-        skillsList: [
-          "✅ HTML / CSS 基础",
-          "✅ JavaScript 初学",
-          "✅ GitHub 上传与部署"
-        ],
-        contactTitle: "📬 联系方式"
-      },
-      ja: {
-        title: "こんにちは、kogenn です 👋",
-        intro: "私はフルスタックエンジニアを目指している、成長中の開発者です。Web制作とプログラミングが大好きです。",
-        skillsTitle: "🎯 スキル",
-        skillsList: [
-          "✅ HTML / CSS の基礎",
-          "✅ JavaScript 初級",
-          "✅ GitHub による公開"
-        ],
-        contactTitle: "📬 連絡先"
-      },
-      en: {
-        title: "Hi, I'm kogenn 👋",
-        intro: "I'm a growing developer who loves web design and coding. My goal is to become a full-stack engineer.",
-        skillsTitle: "🎯 My Skills",
-        skillsList: [
-          "✅ Basic HTML / CSS",
-          "✅ Beginner in JavaScript",
-          "✅ GitHub deployment"
-        ],
-        contactTitle: "📬 Contact"
-      }
-    };
-
-    function setLang(lang) {
-      const data = langData[lang];
-      document.getElementById("title").innerText = data.title;
-      document.getElementById("intro").innerText = data.intro;
-      document.getElementById("skills-title").innerText = data.skillsTitle;
-
-      const skillsList = document.getElementById("skills-list");
-      skillsList.innerHTML = "";
-      data.skillsList.forEach(skill => {
-        const li = document.createElement("li");
-        li.textContent = skill;
-        skillsList.appendChild(li);
-      });
-
-      document.getElementById("contact-title").innerText = data.contactTitle;
-    }
-  </script>
+function setLang(lang) {
+  const d = langData[lang];
+  document.getElementById("title").innerText = d.title;
+  document.getElementById("intro").innerText = d.intro;
+  document.getElementById("skills-title").innerText = d.skillsTitle;
+  const skillsList = document.getElementById("skills-list");
+  skillsList.innerHTML = "";
+  d.skillsList.forEach(text => {
+    const li = document.createElement("li");
+    li.textContent = text;
+    skillsList.appendChild(li);
+  });
+  document.getElementById("contact-title").innerText = d.contactTitle;
+}
+</script>
 </body>
 </html>
